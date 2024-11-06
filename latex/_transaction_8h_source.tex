@@ -1,0 +1,26 @@
+\doxysection{Transaction.\+h}
+\hypertarget{_transaction_8h_source}{}\label{_transaction_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TRANSACTION\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TRANSACTION\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Date.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_transaction}{Transaction}}\ }
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_transaction_ad31dd14db89f63380a3cfdd117eeae1c}{Transaction}}(\textcolor{keyword}{const}\ std::string\&\ type,\ \textcolor{keywordtype}{double}\ amount,\ \textcolor{keywordtype}{double}\ balance,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_date}{Date}}\&\ date);}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00027\ \ \ \ \ std::string\ \mbox{\hyperlink{class_transaction_a202340e306c17b3b5969a2c04c989ce9}{to\_string}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00030\ \ \ \ \ std::string\ transaction\_type;\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{double}\ amount;\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{double}\ balance;\ }
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_date}{Date}}\ date;\ }
+\DoxyCodeLine{00034\ \};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

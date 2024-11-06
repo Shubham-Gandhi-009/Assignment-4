@@ -1,0 +1,67 @@
+\doxysection{Transaction Class Reference}
+\hypertarget{class_transaction}{}\label{class_transaction}\index{Transaction@{Transaction}}
+
+
+Represents a financial transaction with type, amount, balance, and date information.  
+
+
+
+
+{\ttfamily \#include $<$Transaction.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_transaction_ad31dd14db89f63380a3cfdd117eeae1c}{Transaction}} (const std\+::string \&type, double amount, double balance, const \mbox{\hyperlink{class_date}{Date}} \&date)
+\begin{DoxyCompactList}\small\item\em Constructor for creating a \doxylink{class_transaction}{Transaction} object with the given type, amount, balance, and date. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_transaction_a202340e306c17b3b5969a2c04c989ce9}{to\+\_\+string}} () const
+\begin{DoxyCompactList}\small\item\em Converts the \doxylink{class_transaction}{Transaction} object to a string representation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a financial transaction with type, amount, balance, and date information. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_transaction_ad31dd14db89f63380a3cfdd117eeae1c}\index{Transaction@{Transaction}!Transaction@{Transaction}}
+\index{Transaction@{Transaction}!Transaction@{Transaction}}
+\doxysubsubsection{\texorpdfstring{Transaction()}{Transaction()}}
+{\footnotesize\ttfamily \label{class_transaction_ad31dd14db89f63380a3cfdd117eeae1c} 
+Transaction\+::\+Transaction (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{type}{, }\item[{double}]{amount}{, }\item[{double}]{balance}{, }\item[{const \mbox{\hyperlink{class_date}{Date}} \&}]{date}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for creating a \doxylink{class_transaction}{Transaction} object with the given type, amount, balance, and date. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of transaction \\
+\hline
+{\em amount} & The amount involved in the transaction \\
+\hline
+{\em balance} & The balance after the transaction \\
+\hline
+{\em date} & The date of the transaction \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_transaction_a202340e306c17b3b5969a2c04c989ce9}\index{Transaction@{Transaction}!to\_string@{to\_string}}
+\index{to\_string@{to\_string}!Transaction@{Transaction}}
+\doxysubsubsection{\texorpdfstring{to\_string()}{to\_string()}}
+{\footnotesize\ttfamily \label{class_transaction_a202340e306c17b3b5969a2c04c989ce9} 
+std\+::string Transaction\+::to\+\_\+string (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Converts the \doxylink{class_transaction}{Transaction} object to a string representation. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the transaction details 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Transaction.\+h\item 
+Transaction.\+cpp\end{DoxyCompactItemize}

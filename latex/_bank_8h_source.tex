@@ -1,0 +1,33 @@
+\doxysection{Bank.\+h}
+\hypertarget{_bank_8h_source}{}\label{_bank_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ BANK\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ BANK\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Account.h"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_bank}{Bank}}\ }
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_bank_a95972e189e85e1a572348811a8bf0d57}{Bank}}();}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_bank_a86eb33b90cf9dbf0a528155c5bfde004}{\string~Bank}}();}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bank_a760afac1bb5ef1bd731fc5e28f139b45}{add\_account}}(\mbox{\hyperlink{class_account}{Account}}*\ account);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bank_a17257b629af60f17b38f64702463fe1b}{make\_deposit}}(\textcolor{keywordtype}{int}\ account\_number,\ \textcolor{keywordtype}{double}\ amount);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bank_aa44318ff928216bea9844cae27dc0028}{make\_withdrawal}}(\textcolor{keywordtype}{int}\ account\_number,\ \textcolor{keywordtype}{double}\ amount);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{class_account}{Account}}*\ \mbox{\hyperlink{class_bank_a582cf69de958e5dfd5724c8593713744}{get\_account}}(\textcolor{keywordtype}{int}\ account\_number)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_bank_ace16d89de36dbdaa96d511408dbd70bd}{get\_account\_count}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ account\_count;\ \}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00057\ \ \ \ \ \mbox{\hyperlink{class_account}{Account}}**\ accounts;\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{int}\ account\_count;\ }
+\DoxyCodeLine{00059\ \};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ BANK\_H}}
+
+\end{DoxyCode}

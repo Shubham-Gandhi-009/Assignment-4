@@ -1,0 +1,101 @@
+\doxysection{Student Class Reference}
+\hypertarget{class_student}{}\label{class_student}\index{Student@{Student}}
+
+
+Represents a student customer, inheriting from \doxylink{class_customer}{Customer}.  
+
+
+
+
+{\ttfamily \#include $<$Customer.\+h$>$}
+
+Inheritance diagram for Student\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_student}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_student_a7b51588813dbe7acefcf83f0463dbfdc}{Student}} (const std\+::string \&\mbox{\hyperlink{class_customer_a6e6fc6e4c2e23085849bb544aa68a77e}{name}}, const std\+::string \&\mbox{\hyperlink{class_customer_a3a180b064d559c1623dcc4f6fd972c7e}{address}}, int \mbox{\hyperlink{class_customer_a286957f31f5dfc18dbf5acf3f3ec554a}{age}}, const std\+::string \&phone, int \mbox{\hyperlink{class_customer_a67b7caffb85b70db4ff679918ce6d68e}{customer\+\_\+number}})
+\begin{DoxyCompactList}\small\item\em Constructor for creating a \doxylink{class_student}{Student} customer object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_customer}{Customer}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_customer_a561153d5a3b98d453f1003dfd1474409}{Customer}} (const std\+::string \&\mbox{\hyperlink{class_customer_a6e6fc6e4c2e23085849bb544aa68a77e}{name}}, const std\+::string \&\mbox{\hyperlink{class_customer_a3a180b064d559c1623dcc4f6fd972c7e}{address}}, int \mbox{\hyperlink{class_customer_a286957f31f5dfc18dbf5acf3f3ec554a}{age}}, const std\+::string \&phone, int \mbox{\hyperlink{class_customer_a67b7caffb85b70db4ff679918ce6d68e}{customer\+\_\+number}})
+\begin{DoxyCompactList}\small\item\em Constructor for creating a \doxylink{class_customer}{Customer} object. \end{DoxyCompactList}\item 
+std\+::string {\bfseries get\+\_\+name} () const
+\begin{DoxyCompactList}\small\item\em Get the name of the customer. \end{DoxyCompactList}\item 
+std\+::string {\bfseries get\+\_\+address} () const
+\begin{DoxyCompactList}\small\item\em Get the address of the customer. \end{DoxyCompactList}\item 
+int {\bfseries get\+\_\+age} () const
+\begin{DoxyCompactList}\small\item\em Get the age of the customer. \end{DoxyCompactList}\item 
+std\+::string {\bfseries get\+\_\+phone} () const
+\begin{DoxyCompactList}\small\item\em Get the phone number of the customer. \end{DoxyCompactList}\item 
+int {\bfseries get\+\_\+customer\+\_\+number} () const
+\begin{DoxyCompactList}\small\item\em Get the customer number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_student_a0a49bc5bb471ddf60a3c44db719acb1e}\label{class_student_a0a49bc5bb471ddf60a3c44db719acb1e} 
+static const double {\bfseries SAVINGS\+\_\+\+INTEREST} = 0.\+04
+\begin{DoxyCompactList}\small\item\em Savings interest rate for student customers. \end{DoxyCompactList}\item 
+\Hypertarget{class_student_a24f25082d8c9c2442682e0f408a9e3b7}\label{class_student_a24f25082d8c9c2442682e0f408a9e3b7} 
+static const double {\bfseries CHECKING\+\_\+\+INTEREST} = 0.\+01
+\begin{DoxyCompactList}\small\item\em Checking interest rate for student customers. \end{DoxyCompactList}\item 
+\Hypertarget{class_student_ad0e8198490ad5ed3f1d9493c4945b7b3}\label{class_student_ad0e8198490ad5ed3f1d9493c4945b7b3} 
+static const double {\bfseries CHECK\+\_\+\+CHARGE} = 0.\+02
+\begin{DoxyCompactList}\small\item\em Check charge for student customers. \end{DoxyCompactList}\item 
+\Hypertarget{class_student_aa441b9f402ccd240a91f3b16880078da}\label{class_student_aa441b9f402ccd240a91f3b16880078da} 
+static const double {\bfseries OVERDRAFT\+\_\+\+PENALTY} = 25.\+0
+\begin{DoxyCompactList}\small\item\em Overdraft penalty for student customers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_customer}{Customer}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries name}
+\begin{DoxyCompactList}\small\item\em The name of the customer. \end{DoxyCompactList}\item 
+std\+::string {\bfseries address}
+\begin{DoxyCompactList}\small\item\em The address of the customer. \end{DoxyCompactList}\item 
+int {\bfseries age}
+\begin{DoxyCompactList}\small\item\em The age of the customer. \end{DoxyCompactList}\item 
+std\+::string {\bfseries telephone\+\_\+number}
+\begin{DoxyCompactList}\small\item\em The phone number of the customer. \end{DoxyCompactList}\item 
+int {\bfseries customer\+\_\+number}
+\begin{DoxyCompactList}\small\item\em The customer number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a student customer, inheriting from \doxylink{class_customer}{Customer}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_student_a7b51588813dbe7acefcf83f0463dbfdc}\index{Student@{Student}!Student@{Student}}
+\index{Student@{Student}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{Student()}{Student()}}
+{\footnotesize\ttfamily \label{class_student_a7b51588813dbe7acefcf83f0463dbfdc} 
+Student\+::\+Student (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name}{, }\item[{const std\+::string \&}]{address}{, }\item[{int}]{age}{, }\item[{const std\+::string \&}]{phone}{, }\item[{int}]{customer\+\_\+number}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for creating a \doxylink{class_student}{Student} customer object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the customer \\
+\hline
+{\em address} & The address of the customer \\
+\hline
+{\em age} & The age of the customer \\
+\hline
+{\em phone} & The phone number of the customer \\
+\hline
+{\em customer\+\_\+number} & The customer number \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Customer.\+h\item 
+Customer.\+cpp\end{DoxyCompactItemize}

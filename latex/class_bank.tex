@@ -1,0 +1,122 @@
+\doxysection{Bank Class Reference}
+\hypertarget{class_bank}{}\label{class_bank}\index{Bank@{Bank}}
+
+
+Represents a bank with accounts and banking operations.  
+
+
+
+
+{\ttfamily \#include $<$Bank.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_bank_a95972e189e85e1a572348811a8bf0d57}\label{class_bank_a95972e189e85e1a572348811a8bf0d57} 
+{\bfseries Bank} ()
+\begin{DoxyCompactList}\small\item\em Constructor for creating a \doxylink{class_bank}{Bank} object. \end{DoxyCompactList}\item 
+\Hypertarget{class_bank_a86eb33b90cf9dbf0a528155c5bfde004}\label{class_bank_a86eb33b90cf9dbf0a528155c5bfde004} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Bank} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \doxylink{class_bank}{Bank} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bank_a760afac1bb5ef1bd731fc5e28f139b45}{add\+\_\+account}} (\mbox{\hyperlink{class_account}{Account}} \texorpdfstring{$\ast$}{*}account)
+\begin{DoxyCompactList}\small\item\em Add an account to the bank. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bank_a17257b629af60f17b38f64702463fe1b}{make\+\_\+deposit}} (int account\+\_\+number, double amount)
+\begin{DoxyCompactList}\small\item\em Make a deposit into the specified account. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bank_aa44318ff928216bea9844cae27dc0028}{make\+\_\+withdrawal}} (int account\+\_\+number, double amount)
+\begin{DoxyCompactList}\small\item\em Make a withdrawal from the specified account. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_account}{Account}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_bank_a582cf69de958e5dfd5724c8593713744}{get\+\_\+account}} (int account\+\_\+number) const
+\begin{DoxyCompactList}\small\item\em Get the account with the specified account number. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_bank_ace16d89de36dbdaa96d511408dbd70bd}{get\+\_\+account\+\_\+count}} () const
+\begin{DoxyCompactList}\small\item\em Get the total count of accounts in the bank. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a bank with accounts and banking operations. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_bank_a760afac1bb5ef1bd731fc5e28f139b45}\index{Bank@{Bank}!add\_account@{add\_account}}
+\index{add\_account@{add\_account}!Bank@{Bank}}
+\doxysubsubsection{\texorpdfstring{add\_account()}{add\_account()}}
+{\footnotesize\ttfamily \label{class_bank_a760afac1bb5ef1bd731fc5e28f139b45} 
+void Bank\+::add\+\_\+account (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_account}{Account}} \texorpdfstring{$\ast$}{*}}]{account}{}\end{DoxyParamCaption})}
+
+
+
+Add an account to the bank. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em account} & Pointer to the account to be added \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_bank_a582cf69de958e5dfd5724c8593713744}\index{Bank@{Bank}!get\_account@{get\_account}}
+\index{get\_account@{get\_account}!Bank@{Bank}}
+\doxysubsubsection{\texorpdfstring{get\_account()}{get\_account()}}
+{\footnotesize\ttfamily \label{class_bank_a582cf69de958e5dfd5724c8593713744} 
+\mbox{\hyperlink{class_account}{Account}} \texorpdfstring{$\ast$}{*} Bank\+::get\+\_\+account (\begin{DoxyParamCaption}\item[{int}]{account\+\_\+number}{}\end{DoxyParamCaption}) const}
+
+
+
+Get the account with the specified account number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em account\+\_\+number} & The account number to search for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the account with the specified account number 
+\end{DoxyReturn}
+\Hypertarget{class_bank_ace16d89de36dbdaa96d511408dbd70bd}\index{Bank@{Bank}!get\_account\_count@{get\_account\_count}}
+\index{get\_account\_count@{get\_account\_count}!Bank@{Bank}}
+\doxysubsubsection{\texorpdfstring{get\_account\_count()}{get\_account\_count()}}
+{\footnotesize\ttfamily \label{class_bank_ace16d89de36dbdaa96d511408dbd70bd} 
+int Bank\+::get\+\_\+account\+\_\+count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the total count of accounts in the bank. 
+
+\begin{DoxyReturn}{Returns}
+The total count of accounts 
+\end{DoxyReturn}
+\Hypertarget{class_bank_a17257b629af60f17b38f64702463fe1b}\index{Bank@{Bank}!make\_deposit@{make\_deposit}}
+\index{make\_deposit@{make\_deposit}!Bank@{Bank}}
+\doxysubsubsection{\texorpdfstring{make\_deposit()}{make\_deposit()}}
+{\footnotesize\ttfamily \label{class_bank_a17257b629af60f17b38f64702463fe1b} 
+void Bank\+::make\+\_\+deposit (\begin{DoxyParamCaption}\item[{int}]{account\+\_\+number}{, }\item[{double}]{amount}{}\end{DoxyParamCaption})}
+
+
+
+Make a deposit into the specified account. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em account\+\_\+number} & The account number to deposit into \\
+\hline
+{\em amount} & The amount to deposit \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_bank_aa44318ff928216bea9844cae27dc0028}\index{Bank@{Bank}!make\_withdrawal@{make\_withdrawal}}
+\index{make\_withdrawal@{make\_withdrawal}!Bank@{Bank}}
+\doxysubsubsection{\texorpdfstring{make\_withdrawal()}{make\_withdrawal()}}
+{\footnotesize\ttfamily \label{class_bank_aa44318ff928216bea9844cae27dc0028} 
+void Bank\+::make\+\_\+withdrawal (\begin{DoxyParamCaption}\item[{int}]{account\+\_\+number}{, }\item[{double}]{amount}{}\end{DoxyParamCaption})}
+
+
+
+Make a withdrawal from the specified account. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em account\+\_\+number} & The account number to withdraw from \\
+\hline
+{\em amount} & The amount to withdraw \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Bank.\+h\item 
+Bank.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,61 @@
+\doxysection{Account.\+h}
+\hypertarget{_account_8h_source}{}\label{_account_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ACCOUNT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ACCOUNT\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Customer.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Transaction.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_account}{Account}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_customer}{Customer}}*\ \mbox{\hyperlink{class_account_a97c1f6fa553ef297fb952b2f901942cd}{customer}};\ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_account_a6e41f403b4813738ba835377f212de33}{balance}};\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_account_a4db82027e3cc2846c5317f6aa8c578a1}{account\_number}};\ }
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_transaction}{Transaction}}*\ \mbox{\hyperlink{class_account_a3d08ab9c7931fc6c32066cf016804c78}{transactions}}[100];\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_account_a62c4779bc7761876cba9eaebbb85aa92}{transaction\_count}};\ }
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ add\_transaction(\textcolor{keyword}{const}\ std::string\&\ type,\ \textcolor{keywordtype}{double}\ amount);}
+\DoxyCodeLine{00021\ \ \ \ \ std::string\ to\_string()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_account_ab6558e60d6881ef9894c2ba402fd0dd0}{Account}}(\mbox{\hyperlink{class_customer}{Customer}}*\ \mbox{\hyperlink{class_account_a97c1f6fa553ef297fb952b2f901942cd}{customer}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_account_a4db82027e3cc2846c5317f6aa8c578a1}{account\_number}});}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_account_a25ff886382db8ce92963411082805658}{\string~Account}}();}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_account_a73845be94f772b9cdf1d78306d38f74f}{deposit}}(\textcolor{keywordtype}{double}\ amount)\ =\ 0;}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_account_a1afeb95f4c496d3ea9090e7c4ff80355}{withdraw}}(\textcolor{keywordtype}{double}\ amount)\ =\ 0;}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_account_a54b360c4f2f8026f3ae99479c3d93367}{get\_balance}}()\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_account_acf64571302efc5eedbf2300bc8060d9f}{get\_account\_number}}()\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{class_customer}{Customer}}*\ \mbox{\hyperlink{class_account_a3e1e0dc3d6b0ab42b4235b2f1bfdbc69}{get\_customer}}()\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_account_aae53db1ff483dbdf80e10d9753a82bf4}{set\_balance}}(\textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_account_a6e41f403b4813738ba835377f212de33}{balance}});\ }
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00058\ \ \ \ \ std::string\ \mbox{\hyperlink{class_account_ab379f86f2f5ee20be4957a4470879379}{get\_account\_info}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ to\_string();}
+\DoxyCodeLine{00060\ \ \ \ \ \}}
+\DoxyCodeLine{00061\ \};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00067\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_savings_account}{SavingsAccount}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_account}{Account}}\ \{}
+\DoxyCodeLine{00068\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00074\ \ \ \ \ \mbox{\hyperlink{class_savings_account_a2bb3d4187da33a66248c477d26c16fe5}{SavingsAccount}}(\mbox{\hyperlink{class_customer}{Customer}}*\ \mbox{\hyperlink{class_account_a97c1f6fa553ef297fb952b2f901942cd}{customer}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_account_a4db82027e3cc2846c5317f6aa8c578a1}{account\_number}});}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_savings_account_a81b7079bd79c461f98f0a3409fe53013}{deposit}}(\textcolor{keywordtype}{double}\ amount)\ \textcolor{keyword}{override};\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_savings_account_a3c03a0d406d2b4a9700b8535fe3c8d31}{withdraw}}(\textcolor{keywordtype}{double}\ amount)\ \textcolor{keyword}{override};\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_savings_account_a88df76fdc0de1a3fbf22fd923767dda2}{add\_interest}}();\ }
+\DoxyCodeLine{00079\ \};}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00085\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_checking_account}{CheckingAccount}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_account}{Account}}\ \{}
+\DoxyCodeLine{00086\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00092\ \ \ \ \ \mbox{\hyperlink{class_checking_account_af59db47fa24bf7ebd9dff03a334acf0e}{CheckingAccount}}(\mbox{\hyperlink{class_customer}{Customer}}*\ \mbox{\hyperlink{class_account_a97c1f6fa553ef297fb952b2f901942cd}{customer}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_account_a4db82027e3cc2846c5317f6aa8c578a1}{account\_number}});}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_checking_account_ab0d6a90fc511d68221848f599945cd5e}{deposit}}(\textcolor{keywordtype}{double}\ amount)\ \textcolor{keyword}{override};\ }
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_checking_account_a65d24814f873133f58c035f1d20cee33}{withdraw}}(\textcolor{keywordtype}{double}\ amount)\ \textcolor{keyword}{override};\ }
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_checking_account_add94e2710c22c77fb289954f5ce80819}{add\_interest}}();\ }
+\DoxyCodeLine{00097\ \};}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ACCOUNT\_H}}
+
+\end{DoxyCode}

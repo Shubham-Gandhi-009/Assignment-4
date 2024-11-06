@@ -1,0 +1,101 @@
+\doxysection{Senior Class Reference}
+\hypertarget{class_senior}{}\label{class_senior}\index{Senior@{Senior}}
+
+
+Represents a senior customer, inheriting from \doxylink{class_customer}{Customer}.  
+
+
+
+
+{\ttfamily \#include $<$Customer.\+h$>$}
+
+Inheritance diagram for Senior\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_senior}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_senior_ae143cdb315b63fb6d52967a11cfb134a}{Senior}} (const std\+::string \&\mbox{\hyperlink{class_customer_a6e6fc6e4c2e23085849bb544aa68a77e}{name}}, const std\+::string \&\mbox{\hyperlink{class_customer_a3a180b064d559c1623dcc4f6fd972c7e}{address}}, int \mbox{\hyperlink{class_customer_a286957f31f5dfc18dbf5acf3f3ec554a}{age}}, const std\+::string \&phone, int \mbox{\hyperlink{class_customer_a67b7caffb85b70db4ff679918ce6d68e}{customer\+\_\+number}})
+\begin{DoxyCompactList}\small\item\em Constructor for creating a \doxylink{class_senior}{Senior} customer object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_customer}{Customer}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_customer_a561153d5a3b98d453f1003dfd1474409}{Customer}} (const std\+::string \&\mbox{\hyperlink{class_customer_a6e6fc6e4c2e23085849bb544aa68a77e}{name}}, const std\+::string \&\mbox{\hyperlink{class_customer_a3a180b064d559c1623dcc4f6fd972c7e}{address}}, int \mbox{\hyperlink{class_customer_a286957f31f5dfc18dbf5acf3f3ec554a}{age}}, const std\+::string \&phone, int \mbox{\hyperlink{class_customer_a67b7caffb85b70db4ff679918ce6d68e}{customer\+\_\+number}})
+\begin{DoxyCompactList}\small\item\em Constructor for creating a \doxylink{class_customer}{Customer} object. \end{DoxyCompactList}\item 
+std\+::string {\bfseries get\+\_\+name} () const
+\begin{DoxyCompactList}\small\item\em Get the name of the customer. \end{DoxyCompactList}\item 
+std\+::string {\bfseries get\+\_\+address} () const
+\begin{DoxyCompactList}\small\item\em Get the address of the customer. \end{DoxyCompactList}\item 
+int {\bfseries get\+\_\+age} () const
+\begin{DoxyCompactList}\small\item\em Get the age of the customer. \end{DoxyCompactList}\item 
+std\+::string {\bfseries get\+\_\+phone} () const
+\begin{DoxyCompactList}\small\item\em Get the phone number of the customer. \end{DoxyCompactList}\item 
+int {\bfseries get\+\_\+customer\+\_\+number} () const
+\begin{DoxyCompactList}\small\item\em Get the customer number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_senior_ae6683351e20e866e76f69e38eec2fb56}\label{class_senior_ae6683351e20e866e76f69e38eec2fb56} 
+static const double {\bfseries SAVINGS\+\_\+\+INTEREST} = 0.\+04
+\begin{DoxyCompactList}\small\item\em Savings interest rate for senior customers. \end{DoxyCompactList}\item 
+\Hypertarget{class_senior_a9c9c0bdfaaf494a6c9a83a2198118c9c}\label{class_senior_a9c9c0bdfaaf494a6c9a83a2198118c9c} 
+static const double {\bfseries CHECKING\+\_\+\+INTEREST} = 0.\+01
+\begin{DoxyCompactList}\small\item\em Checking interest rate for senior customers. \end{DoxyCompactList}\item 
+\Hypertarget{class_senior_aad7912f1f048f4f076e8afdaf4bb8cb6}\label{class_senior_aad7912f1f048f4f076e8afdaf4bb8cb6} 
+static const double {\bfseries CHECK\+\_\+\+CHARGE} = 0.\+01
+\begin{DoxyCompactList}\small\item\em Check charge for senior customers. \end{DoxyCompactList}\item 
+\Hypertarget{class_senior_ac33a883a501a74b22a5370cae3ed6f45}\label{class_senior_ac33a883a501a74b22a5370cae3ed6f45} 
+static const double {\bfseries OVERDRAFT\+\_\+\+PENALTY} = 25.\+0
+\begin{DoxyCompactList}\small\item\em Overdraft penalty for senior customers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_customer}{Customer}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries name}
+\begin{DoxyCompactList}\small\item\em The name of the customer. \end{DoxyCompactList}\item 
+std\+::string {\bfseries address}
+\begin{DoxyCompactList}\small\item\em The address of the customer. \end{DoxyCompactList}\item 
+int {\bfseries age}
+\begin{DoxyCompactList}\small\item\em The age of the customer. \end{DoxyCompactList}\item 
+std\+::string {\bfseries telephone\+\_\+number}
+\begin{DoxyCompactList}\small\item\em The phone number of the customer. \end{DoxyCompactList}\item 
+int {\bfseries customer\+\_\+number}
+\begin{DoxyCompactList}\small\item\em The customer number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a senior customer, inheriting from \doxylink{class_customer}{Customer}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_senior_ae143cdb315b63fb6d52967a11cfb134a}\index{Senior@{Senior}!Senior@{Senior}}
+\index{Senior@{Senior}!Senior@{Senior}}
+\doxysubsubsection{\texorpdfstring{Senior()}{Senior()}}
+{\footnotesize\ttfamily \label{class_senior_ae143cdb315b63fb6d52967a11cfb134a} 
+Senior\+::\+Senior (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name}{, }\item[{const std\+::string \&}]{address}{, }\item[{int}]{age}{, }\item[{const std\+::string \&}]{phone}{, }\item[{int}]{customer\+\_\+number}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for creating a \doxylink{class_senior}{Senior} customer object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the customer \\
+\hline
+{\em address} & The address of the customer \\
+\hline
+{\em age} & The age of the customer \\
+\hline
+{\em phone} & The phone number of the customer \\
+\hline
+{\em customer\+\_\+number} & The customer number \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Customer.\+h\item 
+Customer.\+cpp\end{DoxyCompactItemize}

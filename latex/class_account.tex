@@ -1,0 +1,156 @@
+\doxysection{Account Class Reference}
+\hypertarget{class_account}{}\label{class_account}\index{Account@{Account}}
+
+
+Represents a general account with customer information, balance, and transactions.  
+
+
+
+
+{\ttfamily \#include $<$Account.\+h$>$}
+
+Inheritance diagram for Account\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_account}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_account_ab6558e60d6881ef9894c2ba402fd0dd0}{Account}} (\mbox{\hyperlink{class_customer}{Customer}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_account_a97c1f6fa553ef297fb952b2f901942cd}{customer}}, int \mbox{\hyperlink{class_account_a4db82027e3cc2846c5317f6aa8c578a1}{account\+\_\+number}})
+\begin{DoxyCompactList}\small\item\em Constructor for creating an \doxylink{class_account}{Account} object. \end{DoxyCompactList}\item 
+\Hypertarget{class_account_a25ff886382db8ce92963411082805658}\label{class_account_a25ff886382db8ce92963411082805658} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Account} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor for \doxylink{class_account}{Account} class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_account_a73845be94f772b9cdf1d78306d38f74f}{deposit}} (double amount)=0
+\begin{DoxyCompactList}\small\item\em Virtual function to deposit money into the account. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_account_a1afeb95f4c496d3ea9090e7c4ff80355}{withdraw}} (double amount)=0
+\begin{DoxyCompactList}\small\item\em Virtual function to withdraw money from the account. \end{DoxyCompactList}\item 
+\Hypertarget{class_account_a54b360c4f2f8026f3ae99479c3d93367}\label{class_account_a54b360c4f2f8026f3ae99479c3d93367} 
+double {\bfseries get\+\_\+balance} () const
+\begin{DoxyCompactList}\small\item\em Get the current balance. \end{DoxyCompactList}\item 
+\Hypertarget{class_account_acf64571302efc5eedbf2300bc8060d9f}\label{class_account_acf64571302efc5eedbf2300bc8060d9f} 
+int {\bfseries get\+\_\+account\+\_\+number} () const
+\begin{DoxyCompactList}\small\item\em Get the account number. \end{DoxyCompactList}\item 
+\Hypertarget{class_account_a3e1e0dc3d6b0ab42b4235b2f1bfdbc69}\label{class_account_a3e1e0dc3d6b0ab42b4235b2f1bfdbc69} 
+\mbox{\hyperlink{class_customer}{Customer}} \texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+customer} () const
+\begin{DoxyCompactList}\small\item\em Get the associated customer. \end{DoxyCompactList}\item 
+\Hypertarget{class_account_aae53db1ff483dbdf80e10d9753a82bf4}\label{class_account_aae53db1ff483dbdf80e10d9753a82bf4} 
+void {\bfseries set\+\_\+balance} (double \mbox{\hyperlink{class_account_a6e41f403b4813738ba835377f212de33}{balance}})
+\begin{DoxyCompactList}\small\item\em Set the balance. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_account_ab379f86f2f5ee20be4957a4470879379}{get\+\_\+account\+\_\+info}} () const
+\begin{DoxyCompactList}\small\item\em Get account information as a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_account_abfeaad27f34b0680cbb9c357dcd8ea74}\label{class_account_abfeaad27f34b0680cbb9c357dcd8ea74} 
+void {\bfseries add\+\_\+transaction} (const std\+::string \&type, double amount)
+\item 
+\Hypertarget{class_account_a2a2962ba020073869421e0ece0848d91}\label{class_account_a2a2962ba020073869421e0ece0848d91} 
+std\+::string {\bfseries to\+\_\+string} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_account_a97c1f6fa553ef297fb952b2f901942cd}\label{class_account_a97c1f6fa553ef297fb952b2f901942cd} 
+\mbox{\hyperlink{class_customer}{Customer}} \texorpdfstring{$\ast$}{*} {\bfseries customer}
+\begin{DoxyCompactList}\small\item\em Pointer to the customer associated with the account. \end{DoxyCompactList}\item 
+\Hypertarget{class_account_a6e41f403b4813738ba835377f212de33}\label{class_account_a6e41f403b4813738ba835377f212de33} 
+double {\bfseries balance}
+\begin{DoxyCompactList}\small\item\em Current balance in the account. \end{DoxyCompactList}\item 
+\Hypertarget{class_account_a4db82027e3cc2846c5317f6aa8c578a1}\label{class_account_a4db82027e3cc2846c5317f6aa8c578a1} 
+int {\bfseries account\+\_\+number}
+\begin{DoxyCompactList}\small\item\em \doxylink{class_account}{Account} number. \end{DoxyCompactList}\item 
+\Hypertarget{class_account_a3d08ab9c7931fc6c32066cf016804c78}\label{class_account_a3d08ab9c7931fc6c32066cf016804c78} 
+\mbox{\hyperlink{class_transaction}{Transaction}} \texorpdfstring{$\ast$}{*} {\bfseries transactions} \mbox{[}100\mbox{]}
+\begin{DoxyCompactList}\small\item\em Array to store transactions. \end{DoxyCompactList}\item 
+\Hypertarget{class_account_a62c4779bc7761876cba9eaebbb85aa92}\label{class_account_a62c4779bc7761876cba9eaebbb85aa92} 
+int {\bfseries transaction\+\_\+count}
+\begin{DoxyCompactList}\small\item\em Count of transactions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a general account with customer information, balance, and transactions. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_account_ab6558e60d6881ef9894c2ba402fd0dd0}\index{Account@{Account}!Account@{Account}}
+\index{Account@{Account}!Account@{Account}}
+\doxysubsubsection{\texorpdfstring{Account()}{Account()}}
+{\footnotesize\ttfamily \label{class_account_ab6558e60d6881ef9894c2ba402fd0dd0} 
+Account\+::\+Account (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_customer}{Customer}} \texorpdfstring{$\ast$}{*}}]{customer}{, }\item[{int}]{account\+\_\+number}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for creating an \doxylink{class_account}{Account} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & Pointer to the customer associated with the account \\
+\hline
+{\em account\+\_\+number} & The account number \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_account_a73845be94f772b9cdf1d78306d38f74f}\index{Account@{Account}!deposit@{deposit}}
+\index{deposit@{deposit}!Account@{Account}}
+\doxysubsubsection{\texorpdfstring{deposit()}{deposit()}}
+{\footnotesize\ttfamily \label{class_account_a73845be94f772b9cdf1d78306d38f74f} 
+virtual void Account\+::deposit (\begin{DoxyParamCaption}\item[{double}]{amount}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Virtual function to deposit money into the account. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount to deposit \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_checking_account_ab0d6a90fc511d68221848f599945cd5e}{Checking\+Account}}, and \mbox{\hyperlink{class_savings_account_a81b7079bd79c461f98f0a3409fe53013}{Savings\+Account}}.
+
+\Hypertarget{class_account_ab379f86f2f5ee20be4957a4470879379}\index{Account@{Account}!get\_account\_info@{get\_account\_info}}
+\index{get\_account\_info@{get\_account\_info}!Account@{Account}}
+\doxysubsubsection{\texorpdfstring{get\_account\_info()}{get\_account\_info()}}
+{\footnotesize\ttfamily \label{class_account_ab379f86f2f5ee20be4957a4470879379} 
+std\+::string Account\+::get\+\_\+account\+\_\+info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get account information as a string. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the account information 
+\end{DoxyReturn}
+\Hypertarget{class_account_a1afeb95f4c496d3ea9090e7c4ff80355}\index{Account@{Account}!withdraw@{withdraw}}
+\index{withdraw@{withdraw}!Account@{Account}}
+\doxysubsubsection{\texorpdfstring{withdraw()}{withdraw()}}
+{\footnotesize\ttfamily \label{class_account_a1afeb95f4c496d3ea9090e7c4ff80355} 
+virtual bool Account\+::withdraw (\begin{DoxyParamCaption}\item[{double}]{amount}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Virtual function to withdraw money from the account. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount to withdraw \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the withdrawal is successful, false otherwise 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_checking_account_a65d24814f873133f58c035f1d20cee33}{Checking\+Account}}, and \mbox{\hyperlink{class_savings_account_a3c03a0d406d2b4a9700b8535fe3c8d31}{Savings\+Account}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Account.\+h\item 
+Account.\+cpp\end{DoxyCompactItemize}

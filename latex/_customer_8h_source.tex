@@ -1,0 +1,63 @@
+\doxysection{Customer.\+h}
+\hypertarget{_customer_8h_source}{}\label{_customer_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CUSTOMER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CUSTOMER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_customer}{Customer}}\ }
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_customer_a561153d5a3b98d453f1003dfd1474409}{Customer}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_customer_a6e6fc6e4c2e23085849bb544aa68a77e}{name}},\ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_customer_a3a180b064d559c1623dcc4f6fd972c7e}{address}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_customer_a286957f31f5dfc18dbf5acf3f3ec554a}{age}},\ \textcolor{keyword}{const}\ std::string\&\ phone,\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_customer_a67b7caffb85b70db4ff679918ce6d68e}{customer\_number}});}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ std::string\ \mbox{\hyperlink{class_customer_a2239217b22e4492a7e3c5198730c9f1c}{get\_name}}()\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00024\ \ \ \ \ std::string\ \mbox{\hyperlink{class_customer_a483805e6926d15c5056a7b68390f62ab}{get\_address}}()\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_customer_a0b8b787e38d329cff031c635c51becdf}{get\_age}}()\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00026\ \ \ \ \ std::string\ \mbox{\hyperlink{class_customer_afed0d811e1235c35d01f77646af4e804}{get\_phone}}()\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_customer_a1a7d4df653fb4d9f182d08733c40a2ed}{get\_customer\_number}}()\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00030\ \ \ \ \ std::string\ \mbox{\hyperlink{class_customer_a6e6fc6e4c2e23085849bb544aa68a77e}{name}};\ }
+\DoxyCodeLine{00031\ \ \ \ \ std::string\ \mbox{\hyperlink{class_customer_a3a180b064d559c1623dcc4f6fd972c7e}{address}};\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_customer_a286957f31f5dfc18dbf5acf3f3ec554a}{age}};\ }
+\DoxyCodeLine{00033\ \ \ \ \ std::string\ \mbox{\hyperlink{class_customer_a46671708423fe2f9a840a4549f6ba423}{telephone\_number}};\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_customer_a67b7caffb85b70db4ff679918ce6d68e}{customer\_number}};\ }
+\DoxyCodeLine{00035\ \};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00041\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_senior}{Senior}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_customer}{Customer}}\ }
+\DoxyCodeLine{00042\ \{}
+\DoxyCodeLine{00043\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{class_senior_ae143cdb315b63fb6d52967a11cfb134a}{Senior}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_customer_a6e6fc6e4c2e23085849bb544aa68a77e}{name}},\ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_customer_a3a180b064d559c1623dcc4f6fd972c7e}{address}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_customer_a286957f31f5dfc18dbf5acf3f3ec554a}{age}},\ \textcolor{keyword}{const}\ std::string\&\ phone,\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_customer_a67b7caffb85b70db4ff679918ce6d68e}{customer\_number}});}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_senior_ae6683351e20e866e76f69e38eec2fb56}{SAVINGS\_INTEREST}};\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_senior_a9c9c0bdfaaf494a6c9a83a2198118c9c}{CHECKING\_INTEREST}};\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_senior_aad7912f1f048f4f076e8afdaf4bb8cb6}{CHECK\_CHARGE}};\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_senior_ac33a883a501a74b22a5370cae3ed6f45}{OVERDRAFT\_PENALTY}};\ }
+\DoxyCodeLine{00058\ \};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00064\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_adult}{Adult}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_customer}{Customer}}\ }
+\DoxyCodeLine{00065\ \{}
+\DoxyCodeLine{00066\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00075\ \ \ \ \ \mbox{\hyperlink{class_adult_a3dbee56d257f9a2f132c06b874ff6864}{Adult}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_customer_a6e6fc6e4c2e23085849bb544aa68a77e}{name}},\ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_customer_a3a180b064d559c1623dcc4f6fd972c7e}{address}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_customer_a286957f31f5dfc18dbf5acf3f3ec554a}{age}},\ \textcolor{keyword}{const}\ std::string\&\ phone,\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_customer_a67b7caffb85b70db4ff679918ce6d68e}{customer\_number}});}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_adult_a134367ea130bb25663a5d7ba37cf2ebf}{SAVINGS\_INTEREST}};\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_adult_a1b91a57d887466c47e807b5b7114a301}{CHECKING\_INTEREST}};\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_adult_ac850ce6c26283c6a47cd2fd095f4b011}{CHECK\_CHARGE}};\ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_adult_ad66389b1088ddf9bfbb0ceee62c254f9}{OVERDRAFT\_PENALTY}};\ }
+\DoxyCodeLine{00081\ \};}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00087\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_student}{Student}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_customer}{Customer}}\ }
+\DoxyCodeLine{00088\ \{}
+\DoxyCodeLine{00089\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00098\ \ \ \ \ \mbox{\hyperlink{class_student_a7b51588813dbe7acefcf83f0463dbfdc}{Student}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_customer_a6e6fc6e4c2e23085849bb544aa68a77e}{name}},\ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_customer_a3a180b064d559c1623dcc4f6fd972c7e}{address}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_customer_a286957f31f5dfc18dbf5acf3f3ec554a}{age}},\ \textcolor{keyword}{const}\ std::string\&\ phone,\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_customer_a67b7caffb85b70db4ff679918ce6d68e}{customer\_number}});}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_student_a0a49bc5bb471ddf60a3c44db719acb1e}{SAVINGS\_INTEREST}};\ }
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_student_a24f25082d8c9c2442682e0f408a9e3b7}{CHECKING\_INTEREST}};\ }
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_student_ad0e8198490ad5ed3f1d9493c4945b7b3}{CHECK\_CHARGE}};\ }
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_student_aa441b9f402ccd240a91f3b16880078da}{OVERDRAFT\_PENALTY}};\ }
+\DoxyCodeLine{00104\ \};}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CUSTOMER\_H}}
+
+\end{DoxyCode}
